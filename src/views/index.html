@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-yellow-100">
+    <nav class="bg-yellow-300 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-semibold text-orange-500">My Portfolio</h1>
+            <ul class="flex space-x-4">
+                <li><a href="#about" class="text-gray-800 hover:text-orange-500">About</a></li>
+                <li><a href="#projects" class="text-gray-800 hover:text-orange-500">Projects</a></li>
+                <li><a href="#contact" class="text-gray-800 hover:text-orange-500">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="bg-yellow-300 py-16 text-center">
+        <div class="container mx-auto">
+            <h1 class="text-4xl font-semibold text-orange-500">Welcome to My Portfolio</h1>
+            <p class="mt-4 text-gray-700">I'm a web developer passionate about creating beautiful and functional
+                websites.</p>
+        </div>
+    </header>
+
+    <section id="projects" class="bg-yellow-100 py-12">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-8">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Modify the padding classes for the project cards -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-orange-500">Cryptographic Encryption Decryption</h3>
+                    <img src="./Cryptographic Encryption Decprction Theam iamge.png" alt="Project 1 Image" class="mt-4 mx-auto w-32 h-32 rounded-full">
+                    <p class="mt-4 text-gray-700">This is a description of my first project.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-orange-500">Project 2</h3>
+                    <p class="mt-4 text-gray-700">This is a description of my second project.</p>
+                </div>
+
+                <!-- Add more project cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-yellow-300 py-12">
+        <div class="container mx-auto">
+            <div class="w-32 h-32 rounded-full overflow-hidden shadow-lg mx-auto md:mr-8">
+                <img src="./WhatsApp Image 2023-05-22 at 00.47.49.png" alt="Profile Picture" class="w-full h-full object-cover">
+            </div>
+            <h2 class="text-3xl font-semibold text-gray-800 mb-8">Contact</h2>
+            <p class="text-gray-700">Feel free to contact me at <a href="mailto:samseralikhan0448@gmail.com">samseralikhan0448@gmail.com</a></p>
+        </div>
+    </section>
+
+    <footer class="bg-yellow-300 py-4 text-gray-700 text-center">
+        <div class="container mx-auto">
+            <p>&copy; 2023 My Portfolio</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
