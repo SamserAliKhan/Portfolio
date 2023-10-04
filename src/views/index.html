@@ -6,32 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link herf="style.css" type="text/css" rel="stylesheet">
     <link href="../../public/fontawsom/css/fontawesome.css" rel="stylesheet">
     <link href="../../public/fontawsom/css/brands.css" rel="stylesheet">
     <link href="../../public/fontawsom/css/solid.css" rel="stylesheet">
 </head>
-
 <body class="bg-yellow-100">
-    <nav class="bg-yellow-300 p-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-semibold text-orange-500">My Portfolio</h1>
-            <ul class="flex space-x-4">
+        <!-- Font Awesome icon for the menu bar -->
+        <div id="menubtn">
+            <i id="menu" class="fas fa-bars text-2xl cursor-pointer"></i>
+        </div>
+
+        <!-- Menu items -->
+    <div id="sideNav">
+        <nav >
+            <ul class="hidden space-x-4">
                 <li><a href="#about" class="text-gray-800 hover:text-orange-500">About</a></li>
                 <li><a href="#projects" class="text-gray-800 hover:text-orange-500">Projects</a></li>
                 <li><a href="#contact" class="text-gray-800 hover:text-orange-500">Contact</a></li>
             </ul>
-        </div>
-    </nav>
-
-    <header class="bg-yellow-300 py-16 text-center">
+        </nav>
+    </div>
+    
+    <section id="about" class="bg-yellow-300 py-12">
+        <!-- Content of the "About" section goes here --><header class="bg-yellow-300 py-16 text-center">
         <div class="container mx-auto">
             <h1 class="text-4xl font-semibold text-orange-500">Welcome to My Portfolio</h1>
-            <p class="mt-4 text-gray-700">I'm a web developer passionate about creating beautiful and functional
+            <p class="mt-4 text-gray-700">Full-Time Back-End Developer | Java, C++, Python | Building the Future with Code | B.tech (CSE) SRM University
                 websites.</p>
         </div>
     </header>
-
+    </section>
+    
+    <!--<section id="projects" class="bg-yellow-100 py-12">-->>
     <section id="projects" class="bg-yellow-100 py-12">
         <div class="container mx-auto ">
             <h2 class="text-3xl font-semibold text-gray-800 mb-8">Projects</h2>
@@ -39,15 +46,29 @@
                 <!-- Modify the padding classes for the project cards -->
                 <div class="bg-white p-8 rounded-lg shadow-md">
                     <h3 class="text-xl font-semibold text-orange-500"><a href="https://github.com/SamserAliKhan/Encryption-Decryption" target="_blank">Cryptographic Encryption Decryption</a></h3>
-                    <img src="../../public/images/Cryptographic Encryption Decprction Theam iamge.png" alt="Project 1 Image" class="mt-4 mx-auto w-32 h-32 rounded-full">
+                        <div class="blur-md invert brightness-150 md:filter-300">
+                            <a href="https://github.com/SamserAliKhan/Encryption-Decryption" target="_blank">
+                                <img src="../../public/images/Cryptographic Encryption Decprction Theam iamge.png" alt="Project 1 Image" class="mt-4 mx-auto w-32 h-32 rounded-full ">
+                            </a>
+                        </div>
                     <p class="mt-4 text-gray-700">This is a description of my first project.</p>
                 </div>
                 <div class="bg-white p-8 rounded-lg shadow-md">
                     <h3 class="text-xl font-semibold text-orange-500"><a href="https://samseralikhan.github.io/To_Do_List/" target="_blank">To-Do List </a></h3>
-                    <p class="mt-4 text-gray-700">This is a description of my second project.</p>
+                    <a href="https://samseralikhan.github.io/To_Do_List/" target="_blank">
+                        <img src="../../public/images/To_Do_List.png" alt="Project 1 Image" class="mt-4 mx-auto w-32 h-32 rounded-full">
+                    </a>
+                    <p class="mt-4 text-gray-700">Thsi is a to do list that will make your daily life management for easier data handling.</p>
                 </div>
 
                 <!-- Add more project cards as needed -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-orange-500"><a href="https://samseralikhan.github.io/To_Do_List/" target="_blank">WeatherAPI </a></h3>
+                    <a href="https://samseralikhan.github.io/To_Do_List/" target="_blank">
+                        <img src="../../public/images/WeatherAPI.png" alt="Project 1 Image" class="mt-4 mx-auto w-32 h-32 rounded-full">
+                    </a>
+                    <p class="mt-4 text-gray-700">This is a description of my third project.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -59,7 +80,9 @@
             </div>
             
             <h2 class="text-3xl font-semibold text-gray-800 mt-8 mb-4">Contact</h2>
-            <p class="text-gray-700">Feel free to contact me at <a href="mailto:samseralikhan0448@gmail.com">samseralikhan0448@gmail.com</a></p>
+            <p class="text-gray-700">My offical mail I.D <a href="mailto:samseralikhan0448@gmail.com"><i class="fa-solid fa-envelope"></i></a></p>
+            <p class="text-gray-700">Feel free to contact me at Linkedin <a href="https://www.linkedin.com/in/samser-ali-khan-042894249/"><i class="fa-brands fa-linkedin"></i></a></p>
+            <p class="text-gray-700">Also do checkout my github <a href="https://github.com/SamserAliKhan"><i class="fa-brands fa-github"></i></a></p>
         </div>
         
     </section>
@@ -70,7 +93,8 @@
         </div>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="./main.js"></script>
+    
 </body>
 
 </html>
